@@ -1,7 +1,7 @@
 
 binance:
-  apiKey: We9nvxVdEBAxZMFe54sy2qIfA7t2KKpeG89kNhm0hTCdMNW8CB2WwMJzOQtmD4bb
-  secretKey: 3L4toZxi1Run3kjPR5rWcS0aDDp0DnztsW52bDuTB75z5Up9sYEBXiG5R008gPrv
+  apiKey: XXX
+  secretKey: XXX
   baseApi: https://api.binance.com
   receivingWindow: 60000
 server:
