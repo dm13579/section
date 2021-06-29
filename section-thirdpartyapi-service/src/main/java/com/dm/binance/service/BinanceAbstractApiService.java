@@ -67,6 +67,16 @@ public abstract class BinanceAbstractApiService<E extends BaseBinanceApiEntity> 
     }
 
     @Override
+    protected Object handlerResult(String result, String requestInfo) {
+        log.info("请求发起信息" + requestInfo);
+
+        // 返回结果处理
+
+        log.info("========result=========" + result);
+        return JSON.parse(result);
+    }
+
+    @Override
     protected String handlerRequest(BaseBinanceApiEntity entity, JSONObject invokeEntity) {
         // 处理post请求
         if (entity.getPost()) {

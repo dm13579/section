@@ -57,11 +57,7 @@ public abstract class BaseAbstractApiService<E extends BaseApiEntity> {
      * @param requestInfo 访问信息
      * @return 处理返回结果
      */
-    protected Object handlerResult(String result, String requestInfo) {
-        log.info("========result=========" + result);
-        log.info("========requestInfo=========" + requestInfo);
-        return JSON.parse(result);
-    }
+    protected abstract Object handlerResult(String result, String requestInfo);
 
     /**
      * 数据获取

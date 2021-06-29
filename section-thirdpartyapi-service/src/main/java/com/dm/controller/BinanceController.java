@@ -43,16 +43,20 @@ public class BinanceController {
     @Resource
     private SystemStatusApiService systemStatusApiService;
 
+    /**
+     * 历史交易服务
+     */
     @Resource
     private HistoricalTradesService historicalTradesService;
 
     @Resource
     private CapitalConfigAllService capitalConfigAllService;
+
     /**
      * 查询系统状态
      */
     @RequestMapping(value = "/systemStatus", method = RequestMethod.GET)
-    public String get24hrTickerPriceChange(){
+    public String systemStatus(){
         return JSON.toJSONString(systemStatusApiService.invoke(new SystemStatusEntity()));
     }
 
